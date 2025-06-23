@@ -1,4 +1,18 @@
-function dummyFunction(event) {
-  // ไม่ทำอะไรเลย
-  event.completed();
-}
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      Office.onReady(() => {
+        // Office API ready
+      });
+
+      function dummyFunction(event) {
+        console.log("dummy function ran");
+        event.completed();
+      }
+    </script>
+  </head>
+  <body>
+    <!-- ไม่ต้องมีอะไร -->
+  </body>
+</html>
