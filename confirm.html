@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    function sendResponse(response) {
+      Office.context.ui.messageParent(response);
+    }
+  </script>
+</head>
+<body>
+  <h3>Send Email?</h3>
+  <button onclick="sendResponse('yes')">Yes</button>
+  <button onclick="sendResponse('no')">No</button>
+</body>
+</html>
