@@ -1,28 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
-  <script>
-    Office.initialize = function () {};
-
-    function onMessageSendHandler(event) {
-      Office.context.ui.displayDialogAsync("https://teerawin.github.io/wechecklap/confirm.html",
-        { height: 30, width: 20, displayInIframe: true },
-        function (asyncResult) {
-          let dialog = asyncResult.value;
-          dialog.addEventHandler(Office.EventType.DialogMessageReceived, function (arg) {
-            if (arg.message === "yes") {
-              event.completed({ allowEvent: true });
-              dialog.close();
-            } else {
-              event.completed({ allowEvent: false });
-              dialog.close();
-            }
-          });
-        }
-      );
-    }
-  </script>
-</head>
-<body></body>
+  <head>
+    <script src="functionFile.js"></script>
+  </head>
+  <body>
+    <p>WeCheck loaded.</p>
+  </body>
 </html>
