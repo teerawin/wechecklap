@@ -6,7 +6,7 @@
     Office.initialize = function () {};
 
     function onMessageSendHandler(event) {
-     Office.context.ui.displayDialogAsync("https://teerawin.github.io/wechecklap/confirm.html",
+      Office.context.ui.displayDialogAsync("https://localhost:3000/confirm.html",
         { height: 30, width: 20, displayInIframe: true },
         function (asyncResult) {
           let dialog = asyncResult.value;
